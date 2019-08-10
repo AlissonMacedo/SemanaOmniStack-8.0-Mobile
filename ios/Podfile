@@ -1,0 +1,35 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'tindev' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for tindev
+
+  target 'tindev-tvOSTests' do
+    inherit! :search_paths
+    # Pods for testing
+    pod 'RNCAsyncStorage', :path => '../node_modules/@react-native-community/async-storage'
+
+  end
+
+  target 'tindevTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
+
+target 'tindev-tvOS' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for tindev-tvOS
+
+  target 'tindev-tvOSTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
